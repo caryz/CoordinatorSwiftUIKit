@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C9C45FC25E8485F000D1D88 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9C45FB25E8485F000D1D88 /* Coordinator.swift */; };
+		2CE3BDA725E894EE001E0C0F /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3BDA625E894EE001E0C0F /* MyViewController.swift */; };
 		2CECE57925E83DD80089E068 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CECE57825E83DD80089E068 /* AppDelegate.swift */; };
 		2CECE57B25E83DD80089E068 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CECE57A25E83DD80089E068 /* SceneDelegate.swift */; };
 		2CECE57D25E83DD80089E068 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CECE57C25E83DD80089E068 /* ViewController.swift */; };
 		2CECE58025E83DD80089E068 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CECE57E25E83DD80089E068 /* Main.storyboard */; };
 		2CECE58225E83DDB0089E068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CECE58125E83DDB0089E068 /* Assets.xcassets */; };
 		2CECE58525E83DDB0089E068 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CECE58325E83DDB0089E068 /* LaunchScreen.storyboard */; };
+		2CECE59125E840160089E068 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CECE59025E840160089E068 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C9C45FB25E8485F000D1D88 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		2CE3BDA625E894EE001E0C0F /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		2CECE57525E83DD80089E068 /* CoordinatorSwiftUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorSwiftUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CECE57825E83DD80089E068 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CECE57A25E83DD80089E068 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		2CECE58125E83DDB0089E068 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CECE58425E83DDB0089E068 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CECE58625E83DDB0089E068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CECE59025E840160089E068 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		2CECE57725E83DD80089E068 /* CoordinatorSwiftUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				2CECE57825E83DD80089E068 /* AppDelegate.swift */,
-				2CECE57A25E83DD80089E068 /* SceneDelegate.swift */,
-				2CECE57C25E83DD80089E068 /* ViewController.swift */,
-				2CECE57E25E83DD80089E068 /* Main.storyboard */,
-				2CECE58125E83DDB0089E068 /* Assets.xcassets */,
-				2CECE58325E83DDB0089E068 /* LaunchScreen.storyboard */,
+				2CECE58E25E83F850089E068 /* SwiftUI */,
+				2CECE58D25E83F7F0089E068 /* UIKit */,
+				2CECE58F25E83F990089E068 /* Support Files */,
 				2CECE58625E83DDB0089E068 /* Info.plist */,
 			);
 			path = CoordinatorSwiftUIKit;
+			sourceTree = "<group>";
+		};
+		2CECE58D25E83F7F0089E068 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				2C9C45FB25E8485F000D1D88 /* Coordinator.swift */,
+				2CECE57C25E83DD80089E068 /* ViewController.swift */,
+				2CE3BDA625E894EE001E0C0F /* MyViewController.swift */,
+				2CECE57E25E83DD80089E068 /* Main.storyboard */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		2CECE58E25E83F850089E068 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				2CECE59025E840160089E068 /* SwiftUIView.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		2CECE58F25E83F990089E068 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CECE57825E83DD80089E068 /* AppDelegate.swift */,
+				2CECE57A25E83DD80089E068 /* SceneDelegate.swift */,
+				2CECE58125E83DDB0089E068 /* Assets.xcassets */,
+				2CECE58325E83DDB0089E068 /* LaunchScreen.storyboard */,
+			);
+			name = "Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +172,9 @@
 			files = (
 				2CECE57D25E83DD80089E068 /* ViewController.swift in Sources */,
 				2CECE57925E83DD80089E068 /* AppDelegate.swift in Sources */,
+				2C9C45FC25E8485F000D1D88 /* Coordinator.swift in Sources */,
+				2CECE59125E840160089E068 /* SwiftUIView.swift in Sources */,
+				2CE3BDA725E894EE001E0C0F /* MyViewController.swift in Sources */,
 				2CECE57B25E83DD80089E068 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +252,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +307,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
